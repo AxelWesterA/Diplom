@@ -1,0 +1,8 @@
+.venv/
+.pylintrc
+__pycache__/
+
+.idea
+
+db.aqlite3
+media/
