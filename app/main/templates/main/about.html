@@ -1,13 +1,16 @@
 {%extends "main/base.html"%}
 {% load static %}
 
-    {% block css%}
+{% block css%}
     <link rel="stylesheet" href="{% static "deps/css/my_footer_css.css"%}">
-    {% endblock css%}
+{% endblock css%}
 
-    {%block content%}
-    <h1 class="mt-5 pt-5"><strong>{{ content }}</strong></h1>
-    {%endblock%}
+{%block content%}
+    <div class="mt-5 pt-5 bg-white custom-shadow rounded">
+        <h1 class="m-2"><strong>{{ content }}</strong></h1>
+        <p class="m-2"> {{ text_on_page }}</p>
+    </div>
+{%endblock content%}
 
 {%block footer%}
     <footer class="py-4 bg-dark">
@@ -15,7 +18,7 @@
             <p class="m-0 text-center text-white">Интернет-магазин настольных игр BGame</p>
         </div>
     </footer>
-    {%endblock footer%}
+{%endblock footer%}
 
 
 
