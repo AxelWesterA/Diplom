@@ -1,11 +1,18 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
+from goods.models import Categories
+
+
 
 def index(request):
+
+    categories = Categories.objects.all()
+
     context = {
         'title' : 'BG - Главная',
-        'content' : 'Магазин настольных игр BGame'
+        'content' : 'Магазин настольных игр BGame',
+        'categories': categories,
 
     }
 
