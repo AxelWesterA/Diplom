@@ -7,12 +7,12 @@ from goods.models import Categories
 
 def index(request):
 
-    categories = Categories.objects.all()
+
 
     context = {
         'title' : 'BG - Главная',
         'content' : 'Магазин настольных игр BGame',
-        'categories': categories,
+
 
     }
 
