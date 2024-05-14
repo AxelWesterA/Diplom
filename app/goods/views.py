@@ -29,7 +29,7 @@ def catalog(request, category_slug=None):
 
 
 
-    paginator = Paginator(goods, 6)
+    paginator = Paginator(goods, 12)
     current_page = paginator.page(int(page))
 
 
